@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora de Propinas</title>
+	<link rel="htmlsheet" href="./index.html">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<section>
+    <form>
+        <div class="mb-3">
+          <label class="form-label" id="title"><h1>Calculadora de Propinas</h1></label>
+        </div>
+        <div>
+            <br>
+          <input type="value" class="form-control" id="valor_pagar" placeholder="Total de la Cuenta">
+        </div>
+        <div class="mb-3">
+          <input type="value" class="form-control" id="porcentaje_propina" placeholder="Porcentaje de Propina">
+        </div>
+        
+        <button id="btn_calcular" type="button" class="btn" onclick="Calcular()">Calcular</button>
+      </form>
+	
+      <div id="resume" class="mb-3 row oculto">
+        <label class="col-sm-2 col-form-label"><h3>Resumen</h3></label>
+        <label class="col-sm-2 col-form-label"><b>Valor Inicial:</b> <span id="vr_inicial"></span></label><br>
+        <label class="col-sm-2 col-form-label"><b>Propina:</b> <span id="vr_propina"></span></label><br>
+        <label class="col-sm-2 col-form-label"><b>Total a Pagar:</b> <span id="vr_total"></span></label><br>
+        <button id="btn_limpiar" type="button" class="btn" onclick="Limpiar()">Limpiar</button>
+      </div>
+</section>
+
+			<script src="./scripts/script.js"></script>
+</body>
+
+</html>
